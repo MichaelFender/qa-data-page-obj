@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Data Driven Testing &amp; Page Objects | Devmountain Foundations</title>
+
+      <link
+        href="_static/pygments.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link href="_static/devmountain.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+          <link rel="stylesheet" type="text/css" href="_static/devmountain.css" />
+          <link rel="stylesheet" type="text/css" href="_static/plot_directive.css" />
+          <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+
+      <script src="_static/pdfobject.min.js"></script>
+      
+  </head>
+  <body>
+      <div id="handouts-container">
+        <header id="page-header">
+            <p id="project-title">Devmountain Foundations</p>
+            <p id="page-title">Data Driven Testing &amp; Page Objects</p>
+              <p id="backlink">
+                <a href="/"> &laquo; Back to Homepage </a>
+              </p>
+        </header>
+
+        <nav id="page-toc"><ul>
+<li><a class="reference internal" href="#">Data Driven Testing &amp; Page Objects</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#employee-manager">Employee Manager</a><ul>
+<li><a class="reference internal" href="#setup">Setup</a></li>
+<li><a class="reference internal" href="#instructions">Instructions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#to-do">To Do</a><ul>
+<li><a class="reference internal" href="#id2">Setup</a></li>
+<li><a class="reference internal" href="#id4">Instructions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+
+        <main id="page-content">
+            <section class="section" id="data-driven-testing-page-objects">
+<h1>Data Driven Testing &amp; Page Objects</h1>
+<section class="section" id="introduction">
+<h2>Introduction</h2>
+<p>In this exercise, you’ll be working with the Employee Manager app and a To Do app to explore data driven testing and using page objects.</p>
+</section>
+<section class="section" id="employee-manager">
+<h2>Employee Manager</h2>
+<section class="section" id="setup">
+<h3>Setup</h3>
+<ol class="arabic simple">
+<li><p>Download the materials for this exercise from Frodo.</p></li>
+<li><p>In your terminal, navigate to the folder you just downloaded, <code class="docutils literal notranslate"><span class="pre">cd</span></code> into the <cite>employeeManager</cite> folder, and run <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code>.</p></li>
+<li><p>The live site can be viewed <a class="reference external" href="https://devmountain-qa.github.io/employee-manager/1.0_Version/index.html" target="_blank">here</a>.</p></li>
+</ol>
+</section>
+<section class="section" id="instructions">
+<h3>Instructions</h3>
+<ol class="arabic simple">
+<li><p>Head to <a class="reference external" href="https://devmountain-qa.github.io/employee-manager/1.0_Version/index.html" target="_blank">Employee Manager</a> and explore it a bit.</p></li>
+<li><p>Look for a test that can be repeated multiple times.</p></li>
+<li><p>Identify each step you’d take for this test in detail.</p></li>
+<li><p>Identify the data needed for each step.</p></li>
+<li><p>Create multiple sets of data (inputs and expected results) for the test you identified.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">employee.test.js</span></code>, define a class to hold each data set, and build out an array of each set.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">employee.test.js</span></code>, write the code for the test that uses your data.</p></li>
+</ol>
+</section>
+</section>
+<section class="section" id="to-do">
+<h2>To Do</h2>
+<section class="section" id="id2">
+<h3>Setup</h3>
+<ol class="arabic simple">
+<li><p>In your terminal, navigate to the folder named <code class="docutils literal notranslate"><span class="pre">toDo</span></code> from the Frodo materials for this lab exercise.</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code>.</p></li>
+<li><p>The live site can be seen <a class="reference external" href="https://devmountain.github.io/qa_todos/" target="_blank">here</a>.</p></li>
+</ol>
+</section>
+<section class="section" id="id4">
+<h3>Instructions</h3>
+<ol class="arabic">
+<li><p>Review the tests provided for you.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">firstTest.test.js</span></code>, create locators for <code class="docutils literal notranslate"><span class="pre">todoInput</span></code>, <code class="docutils literal notranslate"><span class="pre">todos</span></code>, <code class="docutils literal notranslate"><span class="pre">todoLabel</span></code>, <code class="docutils literal notranslate"><span class="pre">todoComplete</span></code>, and <code class="docutils literal notranslate"><span class="pre">clearCompletedButton</span></code>.</p>
+<blockquote>
+<div><div class="togglereveal "><details class="admonition-body"><summary></summary><p>For <cite>todoLabel</cite> and <cite>todoComplete</cite>, you can look in the test and see that the test is looking for these elements FROM the todo element, so we only need a unique selector from the <cite>li.todo</cite> element.</p>
+</details></div></div></blockquote>
+</li>
+<li><p>Head to <code class="docutils literal notranslate"><span class="pre">todoTests.test.js</span></code> and determine what functionality you will test – you can use the outline provided as a jumping off point, but can add what you’d like. And make sure that you’re not just repeating <code class="docutils literal notranslate"><span class="pre">firstTest.test.js</span></code>.</p></li>
+<li><p>Outline the steps you’ll need to follow to execute these tests.</p></li>
+<li><p>Make a list of all the elements you’ll need locators for to be able to execute these tests.</p></li>
+<li><p>Place them all as properties of the <cite>TodoPage</cite> class.</p></li>
+<li><p>Create your tests. (You don’t need any set number of tests here; so long as you have a page object and some testing passing, you’re good to go.)</p></li>
+<li><p>Run your tests with <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">run</span> <span class="pre">test</span></code></p></li>
+</ol>
+<p><strong>When you’re done, push everything to GitHub.</strong></p>
+</section>
+</section>
+</section>
+
+        </main>
+
+        <footer id="page-footer">
+            <p>&copy; 2022 Devmountain</p>
+        </footer>
+      </div>
+
+      <script src="_static/main.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+  </body>
+</html>
